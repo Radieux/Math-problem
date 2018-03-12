@@ -1,5 +1,10 @@
 print("""Pour connaître la suite de Syracus, merci de mettre le chiffre votre choix:""")
 
+try:
+    nombre = int(input())
+except ValueError:
+    print("Merci d'utiliser un nombrer entier")
+
 nombre = int(input())
 
 def collatz(nombre):
